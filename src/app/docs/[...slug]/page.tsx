@@ -15,7 +15,7 @@ export default async function Docs({
   else if(slug?.length === 2){
     return(
       <div>
-        <h1>viewing docs for feature slug[0]</h1>
+        <h1>viewing docs for feature slug[1]</h1>
       </div>
     )
   }
