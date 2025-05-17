@@ -1,11 +1,19 @@
-export default function Docs(){
-  return (
+export default async function Docs({
+  params,
+}: {
+  params: Promise<{ slug: string[] }>;
+}) {
+  const { slug } = await params;
 
-    <div>
-      <h1> this is docs page</h1>
-    </div>
-  )
+  if (slug?.length === 2) {
+    return (
+      <div>
+        <h1>viewing docs for feature slug[0] and concept slug[1]</h1>
+      </div>
+    );
+  }
+  
+  
 }
-
 
 // catch segment route
