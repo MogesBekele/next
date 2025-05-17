@@ -12,6 +12,13 @@ export default async function Docs({
       </div>
     );
   }
+  else if(slug?.length === 1){
+    return(
+      <div>
+        <h1>viewing docs for feature slug[0]</h1>
+      </div>
+    )
+  }
   
   
 }
