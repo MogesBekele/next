@@ -6,3 +6,6 @@ export default function Docs(){
     </div>
   )
 }
+
+
+// catch segment route
