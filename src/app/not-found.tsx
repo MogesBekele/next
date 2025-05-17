@@ -19,3 +19,6 @@ const NotFound: React.FC = () => (
 );
 
 export default NotFound;
+
+
+//you cam also make it spesfic routes
