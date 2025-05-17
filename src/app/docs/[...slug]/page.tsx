@@ -5,20 +5,28 @@ export default async function Docs({
 }) {
   const { slug } = await params;
 
-  if (slug?.length === 2) {
+  if (slug?.length === 3) {
     return (
       <div>
         <h1>viewing docs for feature slug[0] and concept slug[1]</h1>
       </div>
     );
   }
-  else if(slug?.length === 1){
+  else if(slug?.length === 2){
     return(
       <div>
         <h1>viewing docs for feature slug[0]</h1>
       </div>
     )
   }
+    else if(slug?.length === 1){
+    return(
+      <div>
+        <h1>viewing docs for feature slug[0]</h1>
+      </div>
+    )
+  }
+  
   
   
 }
