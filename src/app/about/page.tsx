@@ -5,3 +5,6 @@ export default function About() {
     </div>
   );
 }
+
+
+//rounte in next js
