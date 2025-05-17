@@ -8,3 +8,5 @@ export default async function Productl ({params}:{params: Promise<{productId:str
     </div>
   )
 }
+
+// dynamic route
