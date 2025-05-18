@@ -27,7 +27,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="flex bg-amber-300 w-full ">
+        <header className="flex bg-amber-300 w-full mb-52">
           this is the header tag
         </header>
         {children}
