@@ -27,7 +27,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <header className="flex bg-amber-300 w-full ">
+          this is the header tag
+        </header>
         {children}
+        <footer className="bg-amber-900">
+          this is the footer tag
+        </footer>
       </body>
     </html>
   );
