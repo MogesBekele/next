@@ -31,7 +31,7 @@ export default function RootLayout({
           this is the header tag
         </header>
         {children}
-        <footer className="bg-amber-900">
+        <footer className="bg-amber-900 mt-72">
           this is the footer tag
         </footer>
       </body>
