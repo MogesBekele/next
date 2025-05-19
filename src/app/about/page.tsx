@@ -1,9 +1,6 @@
-import { title } from "process";
-
-export const metadata ={
-  title: 'About the project'
-
-}
+export const metadata = {
+  title: "About the project",
+};
 export default function About() {
   return (
     <div>
@@ -11,6 +8,5 @@ export default function About() {
     </div>
   );
 }
-
 
 //rounte in next js
