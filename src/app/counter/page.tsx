@@ -1,17 +1,12 @@
-"use client"
-import { useState } from "react";
+"use client";
 
-export default function Counter(){
-const [count, setCount] = useState(0)
+import Counter from "./counter";
 
-return(
+export const metadata = {
+  title: "counter"
 
-  <div>
-    <p>count {count}</p>
-    <button onClick={()=>setCount(count+1)}>incriment </button>
-  </div>
-)
+}
 
-
-
+export default function CounterPage() {
+  return <Counter />;
 }
