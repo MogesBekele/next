@@ -9,11 +9,11 @@ return(
     <Link href="/">  Home</Link>
     
      <Link href="/products/1">  product 1</Link>
+       <Link href="/products/2">  product 2</Link>
+         <Link href="/products/3">  product 3</Link>
+           <Link href="/products/4">  product 4</Link>
     
-  <h1>this is product component 1</h1>
-   <h1>this is product component 2</h1>
-    <h1>this is product component 3</h1>
-     <h1>this is product component 4</h1>
+
   </div>
 )
 
