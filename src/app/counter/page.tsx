@@ -1,11 +1,8 @@
-"use client";
-
 import Counter from "./counter";
 
 export const metadata = {
-  title: "counter"
-
-}
+  title: "counter",
+};
 
 export default function CounterPage() {
   return <Counter />;
