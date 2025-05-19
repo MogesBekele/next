@@ -1,3 +1,9 @@
+import { title } from "process";
+
+export const metadata ={
+  title: 'About the project'
+
+}
 export default function About() {
   return (
     <div>
