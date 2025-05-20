@@ -4,9 +4,9 @@ export default function Aritcles() {
     <div>
       <h1>news article id</h1>
       <h1>reading in language</h1>
-      <div>
+      <div className="flex gap-4" >
         <Link href="/articles/id?lang=en">English</Link>
-        <Link href="articles/id?lang=spa">spanish</Link>
+        <Link href="/articles/id?lang=es">spanish</Link>
         <Link href="/articles/id/lang=fr">french</Link>
       </div>
     </div>
