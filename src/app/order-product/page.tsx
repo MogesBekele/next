@@ -1,18 +1,25 @@
-"use client";
-import { useRouter } from "next/navigation";
+// app/page.tsx (or app/home/page.tsx)
+import Link from "next/link";
 
-export default function OrderProduct() {
-  const router = useRouter();
+function delay(ms: number) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
 
-  const handleClick = () => {
-    alert("send susseccfully");
-    router.push("/");
-  };
+export default async function Home() {
+  // This delays rendering by 2 seconds
+  await delay(2000);
 
   return (
     <>
-      <h1>order product</h1>
-      <button onClick={handleClick}>place order</button>
+      <h1>Welcome to home page</h1>
+
+      <Link href="/blog/first">Blog</Link>
+      <br />
+      <Link href="/products">Product</Link>
+      <br />
+      <Link href="/article/breaking-news-123?lang=en">Read in English</Link>
+      <br />
+      <Link href="/article/breaking-news-123?lang=fr">Read in French</Link>
     </>
   );
 }
