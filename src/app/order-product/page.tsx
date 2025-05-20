@@ -5,7 +5,7 @@ export default function OrderProduct() {
   const router = useRouter()
 
   const handleClick = () => {
-    console.log("you are clicked");
+alert('send susseccfully')
       router.push('/')
   };
 
