@@ -1,16 +1,16 @@
 'use client';
 
+import React, { use } from 'react';
 import Link from 'next/link';
-import { useSearchParams } from 'next/navigation';
 
 interface PageProps {
-  params: { articlesId: string };
+  params: Promise<{ articlesId: string }>;
+  searchParams: Promise<{ lang?: 'en' | 'es' | 'fr' }>;
 }
 
-export default function Articles({ params }: PageProps) {
-  const { articlesId } = params;
-  const searchParams = useSearchParams();
-  const lang = searchParams.get('lang') || 'en';
+export default function Articles({ params, searchParams }: PageProps) {
+  const { articlesId } = use(params);
+  const { lang = 'en' } = use(searchParams);
 
   return (
     <div>
