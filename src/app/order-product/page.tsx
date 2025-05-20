@@ -1,14 +1,16 @@
-export default function OrderProduct(){
+import { useRouter } from "next/router";
 
-  const handleClick =()=>{
-    console.log('you are clicked')
-  }
+export default function OrderProduct() {
+  const router = useRouter()
+  router.push('/')
+  const handleClick = () => {
+    console.log("you are clicked");
+  };
 
-  return(
+  return (
     <>
-
-    <h1>order product</h1>
-    <button onClick={handleClick}>place order</button>
+      <h1>order product</h1>
+      <button onClick={handleClick}>place order</button>
     </>
-  )
+  );
 }
