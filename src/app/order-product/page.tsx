@@ -3,9 +3,10 @@ import { useRouter } from "next/navigation";
 
 export default function OrderProduct() {
   const router = useRouter()
-  router.push('/')
+
   const handleClick = () => {
     console.log("you are clicked");
+      router.push('/')
   };
 
   return (
