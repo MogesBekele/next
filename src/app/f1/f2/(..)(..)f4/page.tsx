@@ -5,3 +5,5 @@ export default function InterceptedRoute() {
     </div>
   );
 }
+
+//just likr ../../ in regular path
