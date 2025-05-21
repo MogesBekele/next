@@ -6,7 +6,7 @@ export default function ArchivedNotifications() {
     <Cart>
       <h1>Archived Notifications</h1>
       <div>
-        <Link href="/complex-dashboard/archived">Default</Link>
+        <Link href="/complex-dashboard">Default</Link>
         <br />
     
       </div>
