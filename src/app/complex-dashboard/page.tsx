@@ -6,3 +6,6 @@ export default function ComplexDashboard() {
     </div>
   );
 }
+
+
+//parallel routes
