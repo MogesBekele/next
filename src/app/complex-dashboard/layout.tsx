@@ -3,14 +3,19 @@ export default function ComplexLayout({
   users,
   revenue,
   notifications,
+  login,
 }: {
   children: React.ReactNode;
   users: React.ReactNode;
   revenue: React.ReactNode;
   notifications: React.ReactNode;
+  login: React.ReactNode;
 }) {
-  return (
-    <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
+  const isLoggedIn = false;
+  return isLoggedIn ? (
+    <div
+      style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}
+    >
       <div style={{ marginBottom: "1rem" }}>{children}</div>
       <div style={{ display: "flex", flex: 1 }}>
         <section
@@ -46,5 +51,7 @@ export default function ComplexLayout({
         </aside>
       </div>
     </div>
+  ) : (
+    login
   );
 }
