@@ -1,9 +1,9 @@
-export default function RevenueMatrics() {
+import { Cart } from "@/components/card";
 
+export default function RevenueMatrics() {
   return (
-    <div>
+    <Cart>
       <h1>RevenueMatrics</h1>
-      <p>This is a complex dashboard page.</p>
-    </div>
+    </Cart>
   );
 }

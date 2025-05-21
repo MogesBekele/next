@@ -1,8 +1,9 @@
+import { Cart } from "@/components/card";
+
 export default function Notifications() {
   return (
-    <div>
+    <Cart>
       <h1>Notifications</h1>
-      <p>This is a complex dashboard page.</p>
-    </div>
+    </Cart>
   );
 }
